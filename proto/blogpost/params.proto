@@ -1,0 +1,12 @@
+syntax = "proto3";
+package ytdbuolf.blogpost.blogpost;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/ytdbuolf/blogpost/x/blogpost/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

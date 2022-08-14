@@ -1,0 +1,14 @@
+syntax = "proto3";
+package ytdbuolf.blogpost.blogpost;
+
+import "gogoproto/gogo.proto";
+import "blogpost/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/ytdbuolf/blogpost/x/blogpost/types";
+
+// GenesisState defines the blogpost module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
